@@ -1,0 +1,42 @@
+Week 5 - lecture 1
+Exception Handling
+
+Topics covered:
+1) Syntax
+2) Try, Except, else
+3) Different types of errors
+4) Flow control of error inside nested functions
+________________________________________________________________________________________________________
+
+Week 5 - lecture 2
+Standard Input and output
+
+Topics covered:
+1) input() and how to display messages while taking input
+2) Type converstion as input is always taken in the form of a string
+3) Taking input from user and converting it to desired type, using exception handling nested within while loop
+4) print() has two arguments
+	~end = "..." (default is \n, new line)
+	~sep = "..." (default is " ",single white space)
+________________________________________________________________________________________________________
+
+Week 5 - lecture 3
+Handling Files
+
+Topics covered:
+1) Open a file using a handle with proper modes (r,w,append)
+2) \n -> new line character
+3) read() and readlines()
+4) Pointer of location where you are in a file, cannot move location back
+5) readlines() includes a \n
+6) readline() does not include a \n
+7) Same with write() and writelines()
+8) write() returns the number of character written per line, in case disk is full it is useful
+
+________________________________________________________________________________________________________
+
+Week 5 - lecture 4
+String functions
+
+Topics covered:
+1)
