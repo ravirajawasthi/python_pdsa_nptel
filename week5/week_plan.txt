@@ -1,3 +1,5 @@
+Weekly lecture plan
+
 Week 5 - lecture 1
 Exception Handling
 
