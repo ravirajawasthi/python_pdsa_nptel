@@ -6,7 +6,7 @@ Topics covered:
 2) Try, Except, else
 3) Different types of errors
 4) Flow control of error inside nested functions
-________________________________________________________________________________________________________
+___________________________________________________________________________________________________
 
 Week 5 - lecture 2
 Standard Input and output
@@ -18,7 +18,7 @@ Topics covered:
 4) print() has two arguments
 	~end = "..." (default is \n, new line)
 	~sep = "..." (default is " ",single white space)
-________________________________________________________________________________________________________
+___________________________________________________________________________________________________
 
 Week 5 - lecture 3
 Handling Files
@@ -33,10 +33,58 @@ Topics covered:
 7) Same with write() and writelines()
 8) write() returns the number of character written per line, in case disk is full it is useful
 
-________________________________________________________________________________________________________
+___________________________________________________________________________________________________
 
 Week 5 - lecture 4
-String functions
+String functions (A lot of functions are introduced)
 
 Topics covered:
-1)
+1) Strings are immuable, every method on string returns a string
+2) String methods dont move "pointer" of where you are in a string like in while reading files
+
+	Dealing with white spaces (tab,space)
+
+2) rstrip() removes trailing(after) white spaces
+3) lstrip() removes whitespaces before string
+4) strip() remove all the white space
+
+	Dealing with cases and their type(alphanumeric,numeric,etc)
+
+5) s.upper() returns a string with all characters to uppercase, special case are titlecases like Dr, Lu, Lt etc
+6) s.swapcase() returns a copy of the string with uppercase characters converted to lowercase and vice versa
+7) s.lower() returns a copy of the string with all the cased characters [4] converted to lowercase.
+8) s.capitalize() returns a copy of string in title case format
+9) s.islower() return true if all cased characters [4] in the string are lowercase and there is at least one cased character, false otherwise.
+10) s.isnumeric() return true if all characters in the string are numeric characters, and there is at least one character, false otherwise. e^10 will be numeric 
+11) s.istitle(), s.isupper() all these function the sameway
+
+	Joining and processing Strings
+
+12) s.center(width,fillchar) return centered in a string of length width. Padding is done using the specified fillchar. The original string is returned if width is less than or equal to len(s).
+13) s.count(pattern,start,end) return the number of non-overlapping occurrences of substring pattern in the range [start, end].
+14) s.find(sub[, start[, end]]) return the lowest index in the string where substring sub is found within the slice s[start:end]. Optional arguments start and end are interpreted as in slice notation. Return -1 if sub is not found.
+15) s.index(sub[, start[, end]]) Like find(), but raise ValueError when the substring is not found.
+16) s.join(string) where s is -,#?,() the string with which you want to join
+17) s.ljust(width[, fillchar]) and s.rjust(width[, fillchar]) return the string right justified in a string of length width. Padding is done using the specified fillchar (default is an ASCII space).The original string is returned if width is less than or equal to len(s).
+
+	Splitting Strings
+
+18) s.split(sep=None, maxsplit=-1) returns a LIST of words with sep being the breakpoint. maxsplit decides the maximum number of splits left to right. if sep is not specifies then sep is takes as single whitespace
+19) s.rsplit(sep = None, maxsplit = -1) Behaves as split but from right to left
+
+___________________________________________________________________________________________________
+
+Week 5 - lecture 4
+Format printed output
+
+1) Format in python
+2) "hello {4} you are {2} i am from {0} you are from {1}".format("delhi","mumbai","person","ritesh")
+3) Format also have options like {6.3f} where 6 is width, alphabet at the end represents data type and . in this case represents how many spaces after decimal
+___________________________________________________________________________________________________
+
+Week 5 - lecture 6
+Format printed output
+
+1) del() delete any variable, dictionary, list to free up memory
+2) pass it is used when we have to do nothing after :
+3) None is special type.
